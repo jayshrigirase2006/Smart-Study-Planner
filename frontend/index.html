@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Study Planner — Login</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="login-page">
+
+  <!-- ===== LEFT — Branding ===== -->
+  <div class="login-left">
+    <div class="brand-block">
+      <span class="brand-icon">🎓</span>
+      <h1>Smart Study Planner</h1>
+      <p class="tagline">AI Timetable Generator</p>
+
+      <ul class="feature-list">
+        <li><span class="icon">📅</span> Auto-generate your daily study schedule</li>
+        <li><span class="icon">📊</span> Track subject-wise progress in real time</li>
+        <li><span class="icon">🔔</span> Never miss an upcoming exam or deadline</li>
+        <li><span class="icon">🤖</span> AI-powered timetable personalised for you</li>
+        <li><span class="icon">📱</span> Works on desktop, tablet, and mobile</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== RIGHT — Login form ===== -->
+  <div class="login-right">
+    <div class="login-box">
+      <h2>Welcome back! 👋</h2>
+      <p class="sub">Sign in to access your study dashboard</p>
+
+      <!-- Error message -->
+      <div class="error-msg" id="errorMsg">
+        <span>⚠️</span>
+        <span id="errorText">Incorrect credentials. Try again.</span>
+      </div>
+
+      <!-- Login form -->
+      <form id="loginForm" novalidate>
+
+        <!-- Email -->
+        <div class="form-group">
+          <label for="emailInput">Email Address</label>
+          <div class="input-wrap">
+            <span class="input-icon">📧</span>
+            <input
+              type="email"
+              id="emailInput"
+              placeholder="student@gmail.com"
+              autocomplete="email"
+            />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="form-group">
+          <label for="pwInput">Password</label>
+          <div class="input-wrap">
+            <span class="input-icon">🔒</span>
+            <input
+              type="password"
+              id="pwInput"
+              placeholder="Enter your password"
+              autocomplete="current-password"
+            />
+            <button type="button" class="toggle-pw" id="togglePw" title="Show/hide password">
+              👁️
+            </button>
+          </div>
+        </div>
+
+        <!-- Remember me + Forgot -->
+        <div class="row-between">
+          <label class="checkbox-label">
+            <input type="checkbox" id="rememberMe" />
+            Remember me
+          </label>
+          <a href="#" class="link">Forgot Password?</a>
+        </div>
+
+        <!-- Submit -->
+        <button type="submit" class="btn-primary" id="loginBtn">
+          Sign In
+        </button>
+
+      </form>
+
+      <!-- Demo hint -->
+      <div class="demo-hint">
+        <strong>🔑 Demo Credentials</strong>
+        Email: <strong>student@gmail.com</strong><br />
+        Password: <strong>123456</strong>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
